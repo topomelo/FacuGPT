@@ -12,6 +12,15 @@ This repository contains sample projects created with **ChatGPT**. The latest ad
   python file_reader.py read <path>
   python file_reader.py write <path> [new_contents_file]
   ```
+ j5x0yc-codex/crear-lector-de-archivos-en-python
+- `text_editor.py` - Simple Tkinter GUI for opening and editing files using the same reader and writer functions. Supports undo with **Ctrl+Z**.
+
+Install the optional dependencies listed in `requirements.txt` to enable features like Excel, PDF and DOCX support:
+
+```bash
+pip install -r requirements.txt
+```
+
  xl8388-codex/crear-lector-de-archivos-en-python
 - `text_editor.py` - Simple Tkinter GUI for opening and editing files using the same reader and writer functions. Supports undo with **Ctrl+Z**.
 
