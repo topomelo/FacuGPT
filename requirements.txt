@@ -1,0 +1,7 @@
+PyPDF2
+python-docx
+PyYAML
+pandas
+openpyxl
+Pillow
+reportlab
