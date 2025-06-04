@@ -57,16 +57,8 @@ def make_menu(root: tk.Tk, text: tk.Text) -> tuple[tk.Menu, dict[str, tk.Boolean
     menu.add_cascade(label="File", menu=file_menu)
 
     edit_menu = tk.Menu(menu, tearoff=False)
-j5x0yc-codex/crear-lector-de-archivos-en-python
     edit_menu.add_command(label="Undo", accelerator="Ctrl+Z", command=lambda: text.edit_undo())
     edit_menu.add_separator()
-
- xl8388-codex/crear-lector-de-archivos-en-python
-    edit_menu.add_command(label="Undo", accelerator="Ctrl+Z", command=lambda: text.edit_undo())
-    edit_menu.add_separator()
-
- main
- main
     edit_menu.add_command(label="Cut", command=lambda: text.event_generate("<<Cut>>"))
     edit_menu.add_command(label="Copy", command=lambda: text.event_generate("<<Copy>>"))
     edit_menu.add_command(label="Paste", command=lambda: text.event_generate("<<Paste>>"))
@@ -80,16 +72,7 @@ j5x0yc-codex/crear-lector-de-archivos-en-python
 def main() -> None:
     root = tk.Tk()
     root.title("File Editor")
-
- j5x0yc-codex/crear-lector-de-archivos-en-python
     text = tk.Text(root, wrap="word", undo=True)
-
- xl8388-codex/crear-lector-de-archivos-en-python
-    text = tk.Text(root, wrap="word", undo=True)
-
-    text = tk.Text(root, wrap="word")
- main
- main
     text.pack(fill="both", expand=True)
 
     current_path: Path | None = None
@@ -118,16 +101,8 @@ def main() -> None:
     root.bind("<<Open>>", handle_open)
     root.bind("<<Save>>", handle_save)
     root.bind("<<SaveAs>>", handle_save_as)
- j5x0yc-codex/crear-lector-de-archivos-en-python
     root.bind("<Control-z>", lambda e: text.edit_undo())
 
-
- xl8388-codex/crear-lector-de-archivos-en-python
-    root.bind("<Control-z>", lambda e: text.edit_undo())
-
- main
-
- main
     menu, _ = make_menu(root, text)
     root.config(menu=menu)
 
